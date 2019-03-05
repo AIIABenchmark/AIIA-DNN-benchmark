@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AIBench</string>
+    <string name="bt_text_prepare">Prepare to Test</string>
+    <string name="bt_text_testing">Testing</string>
+    <string name="bt_text_start">Start</string>
+</resources>
