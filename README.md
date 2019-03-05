@@ -1,3 +1,7 @@
+<div align="center">
+<img src="logo.png"/>
+</div>
+
 # AIIABenchmark Overview
 
 In recent years, the on-device deep learning applications are getting more and
