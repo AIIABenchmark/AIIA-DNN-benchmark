@@ -30,7 +30,7 @@ This is a example of image classification application powered by AIIA. Please fe
 
 ​      Import resource files into the device
 
-​      Also refer to the [**FLITE Models**](https://tensorflow.google.cn/lite/models)
+​      Also refer to the [**TFLITE Models**](https://tensorflow.google.cn/lite/models)
 ```
 adb shell mkdir /sdcard/Android/data/com.xintongyuan.aibench/files
 adb shell mkdir /sdcard/Android/data/com.xintongyuan.aibench/files/images
@@ -57,7 +57,7 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 ​      AIBench supports several deep learning frameworks ( SNPE, HIAI,TENGINE and TensorFlow Lite) currently, which may require the following dependencies:
 
 
-​      you need to download the[**SNPE**](https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk),[**HIAI**](https://developer.huawei.com/consumer/cn/devservice/doc/3140202),[**TENGINE**](https://github.com/OAID/Tengine),[**TensorFlow Lite**](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite), refer to the Demo and API.
+​      you need to download the [**SNPE**](https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk), [**HIAI**](https://developer.huawei.com/consumer/cn/devservice/doc/3140202), [**TENGINE**](https://github.com/OAID/Tengine), [**TensorFlow Lite**](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite), refer to the Demo and API.
 
 
 ​      Other content will be continuously updated.
