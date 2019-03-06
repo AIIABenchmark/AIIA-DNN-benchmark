@@ -4,19 +4,15 @@
 
 # AIIABenchmark Overview
 
-In recent years, the on-device deep learning applications are getting more and
-more popular on mobile phones or IoT devices. It's a challenging task for the developers to deploy their
-deep learning models in their mobile applications or IoT devices.
+The goal of the alliance is provide selection reference for application companies, 
+and provide third-party evaluation results for chip companies.
 
-They need to optionally choose a cost-effective hardware solution (i.e. chips and boards),
-then a proper inference framework, optionally utilizing quantization or compression
-techniques regarding the precision-performance trade-off, and finally
-run the model on one or more of heterogeneous computing devices. How to make an
-appropriate decision among these choices is a tedious and time-consuming task.
+The goal of **AIIA DNN benchmarks** is to objectively reflect the current state of AI accelerator capabilities, 
+and all metrics are designed to provide an objective comparison dimension. 
 
-The AI benchmark (i.e. **AIIABenchmark**)is currently based on the Android App as the benchmark framework,
-which will be open to cover different chips and reasoning frameworks in the future. 
-The results include speed and model accuracy, which will provide insights for developers.
+We follow the principle of continuous iteration of the version, continuous enrichment of the scene, 
+and continuous improvement of the AI chip type, and finally form a training environment for the training 
+and inference including the terminal and the cloud.
 
 # Introduction
 
