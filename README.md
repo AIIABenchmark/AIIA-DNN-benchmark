@@ -11,7 +11,7 @@ The goal of **AIIA DNN benchmarks** is to objectively reflect the current state 
 and all metrics are designed to provide an objective comparison dimension. 
 
 We follow the principle of continuous iteration of the version, continuous enrichment of the scene, 
-and continuous improvement of the AI chip type, and finally form a training environment for the training 
+and continuous improvement of the AI chip type, and finally form a evaluation environment for the training 
 and inference including the terminal and the cloud.
 
 # Introduction
