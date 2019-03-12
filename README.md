@@ -62,7 +62,15 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 
 ​      Other content will be continuously updated.
 
+## Benchmark Results
 
+<div align="center">
+<img src="HISI.png"/>
+</div>
+
+<div align="center">
+<img src="rk3399.png"/>
+</div>
 
 ## License
 [Apache License 2.0](LICENSE).
