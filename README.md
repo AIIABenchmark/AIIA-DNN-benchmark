@@ -2,7 +2,7 @@
 <img src="logo.png"/>
 </div>
 
-# AIIABenchmark Overview
+# AIIA DNN Benchmark Overview
 
 The goal of the alliance is provide selection reference for application companies, 
 and provide third-party evaluation results for chip companies.
