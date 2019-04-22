@@ -111,7 +111,6 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 |		|		|		|		|		|	　　mobilenet_v2	|	　　resnet101	|	　　　vgg16	|	　　inception_v3	|	　ssd_mobilenetv1	|	　ssd_mobilenetv2	|	　　ssd_vgg16	|	　　　vdsr	|	　　　　fcn	|	　　　vgg16	|
 |		|		|		|		|		|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	FPS　mAP　mIoU	|	　FPS　mAP　mIoU	|	　FPS　mAP　mIoU	|	　FPS　PSNR(dB)	|	　FPS　mAP　mIoU	|	　FPS　Accuracy	|
 |	Huawei_Mate_20	|	kirin_980	|	NPU	|	HIAI	|	Android	|	101.90　71.3%　88.3%	|	43.78　71.9%　88.4%	|	32.38　64.3%　85%	|	58.32　75.8%　91.5%	|	65.68　0.84　0.83	|	　52.39　0.55　0.80	|	　14.06　0.89　0.79	|	　12.42　24.92	|	　　-　　-　　-	|	　-　　　-	|
-|	Xiaomi_Mix_3	|	snapdragon_845	|	DSP	|	SNPE	|	Android	|	104.77　0.30%　0.9%	|	21.83　67%　86.3%	|	13.36　64.7%　86%	|	30.43　74.3%　92.3%	|	　-　　　-　　-	|	　-　　　-　　-	|	　-　　　-　　-	|	　7.76　　24.19	|	　　-　　-　　-	|	　-　　　-	|
 |	ROC_RK3399_PC	|	CortexA72_x_2 CortexA53_x_4	|	CPU	|	TENGINE	|	Android	|	17.41　73.30%　91.30%	|	1.94　75.1%　93.1%	|	1.115　68.2%　89.4%	|	2.2　　77.5%　93.5%	|	　-　　　-　　-	|	　-　　　-　　-	|	　-　　　-　　-	|	　-　　　　-	|	　　-　　-　　-	|	　-　　　-	|
 
 #### FLOAT16 Inference
@@ -121,7 +120,7 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 |		|		|		|		|		|	　mobilenet_v2	|	　　resnet101	|	　　　vgg16	|	　　inception_v3	|	　ssd_mobilenetv1	|	　ssd_mobilenetv2	|	　　ssd_vgg16	|	　　　vdsr	|	　　　fcn	|	　　　vgg16	|
 |		|		|		|		|		|	FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	FPS　mAP　mIoU	|	　FPS　mAP　mIoU	|	　FPS　mAP　mIoU	|	　FPS　PSNR(dB)	|	　FPS　mAP　mIoU	|	　FPS　Accuracy	|
 |	Huawei_Mate_20	|	kirin_980	|	NPU	|	HIAI	|	Android	|	54.2　70.7%　88.2%	|	21.98　72.3%　89.2%	|	13.53　66.1%　85.2%	|	32.93　75.7%　92.3%	|	35　0.86　0.84	|	　29.97　0.62　0.78	|	　7.276　0.96　0.84	|	　7.64　24.92	|	　1.39　-　　-	|	　-　　　-	|
-|	Xiaomi_Mix_3	|	snapdragon_845	|	GPU	|	SNPE	|	Android	|	90.6　69.2%　88%	|	13.27　56.5%　79.4%	|	5.06　48.3%　72.3%	|	17.36　75.6%　93.2%	|	　-　　-　　-	|	　-　　　-　　　-	|	　-　　　-　　　-	|	　3.21　24.23	|	　　-　　-　　-	|	　-　　　-	|
+
 
 
 ## License
