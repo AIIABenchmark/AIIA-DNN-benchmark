@@ -14,12 +14,15 @@ We follow the principle of continuous iteration of the version, continuous enric
 and continues to improve the AI chip type, and finally form a evaluation environment for the training 
 and inference including the terminal and the cloud.
 
-# Introduction
+## Evaluation & Results
+
+
+<details>
+ <summary><b>Edge / Inference</b></summary>
+
+#### How To Use
 
 This is a example of image classification application powered by AIIA. Please feel free to try them on your device.
-
-## How To Use
-
 #### 1.  [Android Image Classification](https://github.com/AIIABenchmark/AIIABenchmark)
 
 ​      This App based on the TensorFlow Lite engine can classify Images from your Devices.
@@ -62,7 +65,7 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 
 ​      Other content will be continuously updated.
 
-## Five typical application scenario
+#### Five typical application scenario
 
 **Test1: Object_Classification**
 
@@ -102,7 +105,7 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 * Dataset: LFW (1k frames)  
 
 
-## Benchmark Results
+#### Benchmark Results
 
 #### INT8 Inference
 
@@ -121,6 +124,74 @@ adb push ./tflite/. /sdcard/Android/data/com.xintongyuan.aibench/files/models/tf
 |		|		|		|		|		|	FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	　FPS　TOP1　TOP5	|	FPS　mAP　mIoU	|	　FPS　mAP　mIoU	|	　FPS　mAP　mIoU	|	　FPS　PSNR(dB)	|	　FPS　mAP　mIoU	|	　FPS　Accuracy	|
 |	Huawei_Mate_20	|	kirin_980	|	NPU	|	HIAI	|	Android	|	54.2　70.7%　88.2%	|	21.98　72.3%　89.2%	|	13.53　66.1%　85.2%	|	32.93　75.7%　92.3%	|	35　0.86　0.84	|	　29.97　0.62　0.78	|	　7.276　0.96　0.84	|	　7.64　24.92	|	　1.39　-　　-	|	　-　　　-	|
 
+</details>
+
+<details open="open">
+ <summary><b>Cloud / Inference</b></summary>
+  
+#### Environment requirement
+
+In order to follow the objective and fair principle in the AI chip evaluation process, the tested party is required to perform and submit a test report during the self-test according to the following requirements.
+
+1.  Hardware environment requirements
+
+|  No\.|     Hardware  |      requirements      |
+| :--- | :----------------------- | :----------------------------- |
+| 1    | Computing Configuration  | Single node & single card          |
+| 2    | CPU                      | Intel(R) Xeon(R) Silver 4114 CPU @2.20GHz                    | 
+| 3    | Memory                   | 64G DDR4                                                     |
+| 4    | Storage                  | 512G SSD                            |
+
+2.  Software environment requirements
+
+|  No\.|    Option  |      requirements      |
+| :--- | :----------------------- | :----------------------------- |
+| 1    | Test data set  | ILSVRC2015 validation on ImageNet (50k frames )    |
+| 2    | application scenario</br> (Including but not limited to other scenarios)              | Object_Classification                   | 
+| 3    | Neural Network   </br>(Including but not limited to other models) | VGG16/Resnet50/Resnet152/MobileNet_v1  (Offered by AIIA)     |
+| 4    | Acceleration framework                  | Adapt to the AI card                            |
+| 5    | Metrics                  | Latency   Accuracy   Throughput   Power  </br>Computing power per watt(frame/sec/w) </br>*The calculation of all test indicators is based on the test data set </br>and can be calculated in multiple scripts*           |
+
+3.  Procedure requirements
+
+|  No\.|    Option  |      requirements      |
+| :--- | :----------------------- | :----------------------------- |
+| 1    | Pre-processing  | Standardize with z-score (non-crop)    |
+| 2    | Batch size                      | 1/2/4/8/16/32/64/128                   | 
+| 3    | Inference latency                   |Inference time without pre-processing and post-processing         |
+| 4    | Power                  | Average power during inference, excluding power of other peripheral modules       |
+| 5    | Program running sequence | --->Task initialization (quantization model, loading model) </br> --->Pre-processing </br> --->Start monitoring power </br>---> Start the timer </br>---> Inference </br>--->End of time</br> --->End of power monitoring </br>---> post-processing </br>--->Metrics output   |
+| 6    | Log format  | ###################</br>processor_name：</br>test_name：</br>model_name：</br>batch size：</br>power：</br>latency：(ms/batch)</br>throughput：(batch size/latency*1000)</br>top1：</br> top5：</br>###################|
+
+4.  Sample results
+
+```
+
++---------------------------------------------------------------------------------------+
+|                                 Resnet50（INT8）                                      |
++---------------------------------------------------------------------------------------+
+| top1/top5 | batch size | Latency(ms) | Throughput | Power(w) | 每瓦算力 (/frame/sec/w) |
+|-----------|---------------------------------------------------------------------------|
+|           | 1          |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 2          |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 4          |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 8          |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 16         |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 32         |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 64         |             |            |          |                        |
+|           |---------------------------------------------------------------------------|
+|           | 128        |             |            |          |                        |
++---------------------------------------------------------------------------------------+
+
+```
+
+</details> 
 
 
 ## License
