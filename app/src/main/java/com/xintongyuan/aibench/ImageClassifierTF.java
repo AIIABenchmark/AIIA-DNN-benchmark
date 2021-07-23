@@ -44,7 +44,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import org.tensorflow.lite.Interpreter;
 
-/**
+/*
  * Classifies images with Tensorflow Lite.
  */
 public abstract class ImageClassifierTF {
