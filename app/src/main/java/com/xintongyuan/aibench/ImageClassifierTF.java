@@ -170,7 +170,7 @@ public abstract class ImageClassifierTF {
     while (count < k) {
       final int index = top(array, selected);
       selected[index] = true;
-      topK[count] = new Pair<>(index, array[index]);//
+      topK[count] = new Pair<>(index, array[index]);
       count++;
     }
     return topK;
